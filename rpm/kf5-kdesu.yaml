@@ -25,7 +25,6 @@ PkgBR:
     - kf5-rpm-macros
     - extra-cmake-modules
     - qt5-tools
-    - libX11-devel
     - kf5-kcoreaddons-devel
     - kf5-kservice-devel
     - kf5-kpty-devel
@@ -38,6 +37,7 @@ PkgConfigBR:
     - Qt5Widgets
     - Qt5Concurrent
     - Qt5Test
+    - xcb
 Requires:
     - kf5-filesystem
 
