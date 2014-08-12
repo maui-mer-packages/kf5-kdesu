@@ -1,5 +1,5 @@
-Name         : kf5-kdesu
-Version      : 5.0.0
+Name         : kdesu
+Version      : 5.1.0
 Release      : 1
 Group        : System/Base
 License      : GPLv2+
@@ -25,9 +25,9 @@ PkgBR:
     - kf5-rpm-macros
     - extra-cmake-modules
     - qt5-tools
-    - kf5-kcoreaddons-devel
-    - kf5-kservice-devel
-    - kf5-kpty-devel
+    - kcoreaddons-devel
+    - kservice-devel
+    - kpty-devel
 PkgConfigBR:
     - Qt5Core
     - Qt5DBus
@@ -60,12 +60,12 @@ SubPackages:
         The %{name}-devel package contains the files necessary to develop applications
         that use %{name}.
       Requires:
-          - kf5-kcoreaddons-devel
-          - kf5-kservice-devel
-          - kf5-kpty-devel
+          - kcoreaddons-devel
+          - kservice-devel
+          - kpty-devel
       Files:
           - "%{_kf5_includedir}/kdesu_version.h"
           - "%{_kf5_includedir}/KDESu"
           - "%{_kf5_libdir}/libKF5Su.so"
-          - "%{_kf5_libdir}/cmake/KF5Su"
-          - "%{_datadir}/qt5/mkspecs/modules/qt_KDESu.pri"
+          - "%{_kf5_cmakedir}/KF5Su"
+          - "%{_kf5_mkspecsdir}/qt_KDESu.pri"
